@@ -25,3 +25,11 @@ The proposed approach combines:
 - **Machine Learning Anomaly Detection:** ML models classify device states as “good” or “bad” based on telemetry data, helping to assess the impact of updates.
 - **Adaptive OTA Updates:** Updates are only applied if they improve or maintain performance. Harmful updates are blocked automatically to protect device stability and resources.
 
+## 🕵🏻‍♀️ Results Presentation And Discussion
+
+To evaluate how software quality impacts system resources, we first developed Python scripts that simulate both inefficient (bad) and optimized (good) code. These scripts were executed on a local machine to measure their effects on CPU usage, RAM consumption, network activity, and disk operations. The resource data was collected in real-time and transmitted to an IoT analytics platform called TagoIO using a device token.
+
+On the TagoIO platform:
+- A virtual device was created.
+- Telemetry data from each script execution was sent to this device in real time.
+- The data was then exported as CSV and JSON formats for further analysis.
