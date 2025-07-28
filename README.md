@@ -21,7 +21,7 @@ Traditional IoT update mechanisms often ignore real-time system data, which can 
 ## 🔬 Methodology
 
 The proposed approach combines:
-- **Continuous Monitoring** Real-time tracking of CPU, RAM, network, and power usage to understand device performance before updates.
-- **Machine Learning Anomaly Detection** ML models classify device states as “good” or “bad” based on telemetry data, helping to assess the impact of updates.
-- **Adaptive OTA Updates** Updates are only applied if they improve or maintain performance. Harmful updates are blocked automatically to protect device stability and resources.
+- **Continuous Monitoring:** Real-time tracking of CPU, RAM, network, and power usage to understand device performance before updates.
+- **Machine Learning Anomaly Detection:** ML models classify device states as “good” or “bad” based on telemetry data, helping to assess the impact of updates.
+- **Adaptive OTA Updates:** Updates are only applied if they improve or maintain performance. Harmful updates are blocked automatically to protect device stability and resources.
 
