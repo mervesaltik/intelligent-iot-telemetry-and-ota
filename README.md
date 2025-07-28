@@ -1,9 +1,9 @@
 # Intelligent IoT-Based Telemetry and Adaptive Over-the-Air (OTA) Update Mechanism
 
 ## 👩🏻‍💻 Developed By
-- Merve Saltık  
-- Sude Güzel (https://github.com/sdgzl)
-- Aleyna Menekşe (https://github.com/Aleynamnks)
+- [Merve Saltık]  
+- [Sude Güzel] (https://github.com/sdgzl)
+- [Aleyna Menekşe] (https://github.com/Aleynamnks)
 
 ## 🧠 Project Overview
 
