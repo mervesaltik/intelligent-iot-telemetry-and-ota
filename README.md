@@ -2,8 +2,8 @@
 
 ## 👩🏻‍💻 Developed By
 - Merve Saltık  
-- Sude Güzel [(https://github.com/sdgzl)]
-- Aleyna Menekşe [(https://github.com/Aleynamnks)]
+- Sude Güzel (https://github.com/sdgzl)
+- Aleyna Menekşe (https://github.com/Aleynamnks)
 
 ## 🧠 Project Overview
 
