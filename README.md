@@ -33,3 +33,9 @@ On the TagoIO platform:
 - A virtual device was created.
 - Telemetry data from each script execution was sent to this device in real time.
 - The data was then exported as CSV and JSON formats for further analysis.
+
+- **Performance Metrics Sent to TagoIO - Live Inspector:**
+![Performance Metrics Sent to TagoIO - Live Inspector](images/image1.jpeg)
+
+- **Performance Metrics Sent to TagoIO - Data:**
+![Performance Metrics Sent to TagoIO - Data](images/image1.jpeg)
