@@ -72,3 +72,21 @@ This function enables **real-time classification** of incoming system telemetry 
 ### 🔸 Confusion Matrix
 ![Confusion Matrix](images/image4.jpeg)
 
+## 🚨 Real-Time Alert System
+Once the prediction is made, the system sends both the classification result and telemetry data (CPU, RAM, etc.) to the TagoIO platform. If the model predicts the code as **"bad"**, an **alert is triggered** in the **TagoIO** interface to warn the user.
+
+This provides a real-time visual monitoring mechanism for detecting inefficient or harmful code executions on connected devices.
+
+🔔 **Alert Visualization:**
+If the result is "bad", TagoIO raises a visible alert:
+**"BAD BAD BAD CODE"**
+
+### ALERT ❗️
+![Alert](images/image5.jpeg)
+
+
+---
+
+**Software Engineering Department**
+
+---
