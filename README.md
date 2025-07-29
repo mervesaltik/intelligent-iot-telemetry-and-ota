@@ -64,13 +64,11 @@ Model evaluation:
 Finally, the trained model was saved and a **prediction function** was implemented.
 This function enables **real-time classification** of incoming system telemetry data, providing a robust **decision support mechanism** for adaptive OTA updates.
 
-## 📊 Scatter Plot And Confusion Matrix
+## 📊 Scatter Plot and Confusion Matrix
 
-- **Scatter Plot:**
-  ![Scatter Plot](images/image3.jpeg)
+### 🔸 Scatter Plot
+![Scatter Plot](images/image3.jpeg)
 
-- **Confusion Matrix:**
-  ![Confusion Matrix](images/image4.jpeg)
-
-
+### 🔸 Confusion Matrix
+![Confusion Matrix](images/image4.jpeg)
 
