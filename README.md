@@ -67,9 +67,10 @@ This function enables **real-time classification** of incoming system telemetry 
 ## 📊 Scatter Plot And Confusion Matrix
 
 - **Scatter Plot:**
-![Scatter Plot](images/image3.jpeg)
+  ![Scatter Plot](images/image3.jpeg)
 
 - **Confusion Matrix:**
-![Confusion Matrix](images/image4.jpeg)
+  ![Confusion Matrix](images/image4.jpeg)
+
 
 
