@@ -25,7 +25,7 @@ The proposed approach combines:
 - **Machine Learning Anomaly Detection:** ML models classify device states as “good” or “bad” based on telemetry data, helping to assess the impact of updates.
 - **Adaptive OTA Updates:** Updates are only applied if they improve or maintain performance. Harmful updates are blocked automatically to protect device stability and resources.
 
-## 🕵🏻‍♀️ Results Presentation And Discussion
+## 📡 Telemetry Data Collection with TagoIO
 
 To evaluate how software quality impacts system resources, we first developed Python scripts that simulate both inefficient (bad) and optimized (good) code. These scripts were executed on a local machine to measure their effects on CPU usage, RAM consumption, network activity, and disk operations. The resource data was collected in real-time and transmitted to an IoT analytics platform called TagoIO using a device token.
 
@@ -39,3 +39,37 @@ On the TagoIO platform:
 
 - **Performance Metrics Sent to TagoIO - Data:**
 ![Performance Metrics Sent to TagoIO - Data](images/image1.jpeg)
+
+The exported dataset was used in a machine learning pipeline to develop a model that classifies system behavior as either “good” or “bad” based on system performance statistics.
+
+## 🤖 Machine Learning Pipeline
+
+The collected dataset was preprocessed as follows:
+
+- **Missing values** were handled and **outliers** were removed.
+- **Feature differences** (before and after CPU, RAM, disk, and network usage) were calculated.
+- **Labels** were assigned as either "good" or "bad".
+- **SMOTE** (Synthetic Minority Over-sampling Technique) was used to address class imbalance.
+- All features were **scaled** for consistency.
+
+For model training:
+- **GridSearchCV** was used to find the best hyperparameters.
+- Two classifiers — **Random Forest** and **K-Nearest Neighbors (KNN)** — were trained.
+- These models were combined using a **Soft Voting Classifier** to boost overall prediction accuracy.
+
+Model evaluation:
+- A **confusion matrix** and **classification report** were used to assess performance.
+- Visualizations showed label distribution based on **CPU** and **RAM** differences.
+
+Finally, the trained model was saved and a **prediction function** was implemented.
+This function enables **real-time classification** of incoming system telemetry data, providing a robust **decision support mechanism** for adaptive OTA updates.
+
+## 📊 Scatter Plot And Confusion Matrix
+
+- **Scatter Plot:**
+![Scatter Plot](images/image3.jpeg)
+
+- **Confusion Matrix:**
+![Confusion Matrix](images/image4.jpeg)
+
+
